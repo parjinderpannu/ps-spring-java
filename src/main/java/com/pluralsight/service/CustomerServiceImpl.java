@@ -9,7 +9,7 @@ import com.pluralsight.repository.CustomerRepository;
 
 public class CustomerServiceImpl implements CustomerService {
 	
-	@Autowired
+	
 	private CustomerRepository customerRepository;
 	
 	public CustomerServiceImpl() {
@@ -20,7 +20,7 @@ public class CustomerServiceImpl implements CustomerService {
 		System.out.println("Using Contructor Injections");
 		this.customerRepository = customerRepository;
 	}
-	
+	@Autowired
 	public void setCustomerRepository(CustomerRepository customerRepository) {
 		System.out.println("Using Setter Injections");
 		this.customerRepository = customerRepository;
