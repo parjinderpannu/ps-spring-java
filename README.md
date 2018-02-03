@@ -1,1 +1,1 @@
-# ps-spring
+# ps-spring-java
